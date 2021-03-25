@@ -1,18 +1,26 @@
 
 import './App.css';
-import '../node_modules/bootstrap/dist/css/bootstrap.css'
+// import xxxxx from "./imageInSrc.jpg"
+
+
 
 function App() {
   return (
-    <div >
-      <h1>Example heading <span class="badge bg-secondary">New</span></h1>
-      <h2>Example heading <span class="badge bg-secondary">New</span></h2>
-      <h3>Example heading <span class="badge bg-secondary">New</span></h3>
-      <h4>Example heading <span class="badge bg-secondary">New</span></h4>
-      <h5>Example heading <span class="badge bg-secondary">New</span></h5>
-      <h6>Example heading <span class="badge bg-secondary">New</span></h6>
-   
-    </div>
+    <div style={{border: 'solid 1px black', maxWidth: '100vw'}}>
+    <h1 className="title red">Your name here</h1>
+    <br />
+    <img src="/imageInSrc.jpg" />
+    <br />
+    <img src="/imageInPublic.jpg" />
+  
+  <video width={320} height={240} controls>
+    <source src="myVideo.mp4" type="video/mp4" />
+  </video>
+  </div>
+
+
+
+
   );
 }
 
